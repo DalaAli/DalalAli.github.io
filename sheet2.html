@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sheet2- coronavirus Form</title>
+    
+    </head>
+    
+    <body>
+       <h1>Coronavirus Intake Form for attend class</h1>
+    
+        <p> for all of our safity,pleas fill this out 24 hours prior to each class(until further notic).Be sure that the information you`ll give is accurate and complete> pleas get immediate medical atttention if you have any of the severe COVID-19 sign </p>
+        
+        <form action="masagepage.html" method="get">
+        <fieldset>
+         <legend>Personal information:</legend>
+            <lable for="fname">First name:</lable><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <lable for="lname">Last name:</lable><br>
+            <input type="text" id="lname" name="lname" maxlength="6"><br>
+            <lable for="dob">Date of Birth:</lable><br>
+            <input type="date" id="dob" name="dob" max="2002-12-31"><br>
+            <lable for="phone">phone:</lable><br>
+            <input type="tel" id="phone" name="phone"><br>
+            <lable for="email">Email:</lable><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <lable for="app">Do you have"تطمئن-تباعد-توكلنا-"Apps in your phone:</lable>
+            <input type="radio" id="yes" name="app" required>
+            <lable for="radio">Yes</lable>
+            <input type="radio" id="no" name="app" required>
+            <lable for= "no">NO</lable><br><br>
+             
+            </fieldset>
+            <br>
+            
+            <fieldset>
+                <legend>Class information:</legend>
+                <lable for ="class">Choos class:</lable><br>
+                 <select id="class" name="class" size="noun">
+                    <option value="204IT" >204IT:web programming</option>
+                     <option value="201CS">201CS:drogramming1</option>
+                     <option value="202CS">202CS:drogramming2</option>
+                     <option value="412CS">412CS:computer ethic</option>
+                </select><br><br>
+                
+                <lable >pleas explane why you need to attend lab</lable><br><br>
+                <textarea  name="attend" rows="10" cols="30" ></textarea>
+                
+             </fieldset>
+            <br>
+            <fieldset>
+            <legend>Health information:</legend>
+                <lable for="health">How helthy do you feel in general?</lable><br>
+                0<input type="range" id="health" name="health">10
+                <lable>Check the symtoms that you have experienced in the PAST Week:</lable><br>
+                
+                <input type="checkbox" id="c1" name="symptoms">
+                <lable for="c1">Fever/chills</lable><br>
+                <input type="checkbox" id="c2" name="symptoms">
+                   <lable for="c2">Headaches</lable><br>
+                <input type="checkbox" id="c3" name="symptoms">
+                <lable for="c3"> coughing</lable><br>
+                <input type="checkbox" id="c4" name="symptoms">
+                <lable for="c4"> Shortness of breath</lable><br>
+                <input type="checkbox" id="c5" name="symptoms">
+                <lable for="c5"> Recent loss of sense of smell or taste</lable><br>
+            
+         </fieldset>
+            <br><br>
+            <input type="submit" value="send">
+            
+        
+        
+        
+        </form>
+    
+    </body>
+</html>
