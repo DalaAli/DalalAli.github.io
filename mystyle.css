@@ -1,0 +1,25 @@
+body { background-image:url(photos/shaqra.jpg);
+      background-repeat:no-repeat;
+      background-position:right top;}
+
+h1,h2,h3{color:cadetblue}
+
+ul{list-style-type:square}
+ol{list-style-type: upper-roman}
+ul ol{list-style-type:  lower-roman}
+ol ol{list-style-type: lower-roman}
+
+a:link {text-decoration: none;color:blue}
+a:visited { text-decoration: none;color:red}
+a:hover {text-decoration: underline; color:green}
+a:active {text-decoration: underline; color:black}
+
+p.style1 {font-size:20px ;
+           font-family:monospace,cursive,monospace;
+           color:blue}    
+p.style2 {font-size:15px ;
+           font-family:fantasy,sans-serif, monospace;
+           color:red} 
+p.style3 {font-size:22px;
+           font-family:sans-serif,cursive,fantasy;
+           color:green} 
