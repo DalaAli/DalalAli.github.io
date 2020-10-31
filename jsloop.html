@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+ <head>
+  
+    
+ </head>
+
+  <body>
+      
+      <script>
+
+        var sum=0;
+        var avg; 
+         var inputArray = [];
+         var size = parseInt(prompt("enter number you want")); // size
+         var i;
+         for( i=1; i<=size; i++) {
+         	document.write("Enter the grade of student "+i+":");
+	//Taking Input from user
+        	 document.write("<input type='number' id='g'>  "+" <br><br>" );}
+           
+                            for(i=size;i>=0;i--){
+                            inputArray[i] = document.getElementById('g'+i).value; 
+                            sum+=inputArray[i] ;
+                             
+                            }
+        
+             
+             function fun(){
+                           
+                 
+                             document.getElementById("p1").innerHTML="the total of grade:"+sum;
+                             avg= document.getElementById("p2").innerHTML="the average of grade:"+(sum/size);
+                            }
+                 
+           </script>
+  
+
+      
+      <button onclick="fun()">calculate</button>
+      <p id="p1"></p>
+      <p id="p2"></p>
+      
+           
+    </body>
+
+
+
+
+
+
+
+</html>
