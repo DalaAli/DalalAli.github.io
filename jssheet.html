@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+     <title>JSsheet</title>
+     <meta charset="utf-8">
+ 
+    </head>
+  
+    
+     <body id="m1">
+        
+
+         
+         
+         
+        <h1>java scribt</h1>
+        <p>changing the mood of the page </p>
+    
+          <button onclick=darkMood()>DarkMood</button>
+          <button onclick=lightMood()>lightkMood</button>
+         
+     
+       <script>
+       
+          
+          var d = new Date();
+          var hour = d.getHours();
+           
+           var name = window.prompt(" enter your name ");
+           
+            if (hour < 12)
+                 { document.write(" Good morning "+ name);}
+           
+            if ( hour >= 12)
+                { document.write("<br> <br>"+" Good Afternoon "+ name);}
+           
+             
+          
+            
+           
+           
+          function darkMood(){
+           document.getElementById("m1").style.backgroundColor="black";
+            document.getElementById("m1").style.color="white";
+          }
+          
+           function lightMood(){
+           document.getElementById("m1").style.backgroundColor="white";
+            document.getElementById("m1").style.color="black";
+          }
+      </script>
+    
+         
+       
+    </body>
+
+
+
+
+
+
+
+
+</html>

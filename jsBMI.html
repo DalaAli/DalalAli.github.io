@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+       <title>BMI</title>
+    </head>
+
+  <body>
+    <form>
+        Your Weight(kg):
+        <input type="text" id="kg" name="kg"><br><br>
+        Your Height(cm):
+        <input type="text" id="cm" name="cm"><br><br>
+        </form>
+      
+           <button onClick= "BMI()" > Calculate BMI </button>
+        
+        <p id="cal"></p>
+        <p id="comp"></p>
+      
+       <script>
+           
+         function BMI(){
+             
+             var height,weight,bmi;
+             
+              weight = document.getElementById("kg").value;
+              height = document.getElementById("cm").value;
+            
+               bmi = weight/(height/100*height/100)  ;
+             
+              document.getElementById("cal").innerHTML="Your BMI : " +bmi;
+             
+               if ( bmi <18.5)
+                 { document.getElementById("comp").innerHTML="This means: Your BMI:That You Are underweight"}
+              else if (bmi >18.5 && bmi<24.9)
+                 { document.getElementById("comp").innerHTML="This means: Your BMI:That You Are healthy"}
+              else if (bmi>25 && bmi<29.9)
+                  { document.getElementById("comp").innerHTML="This means: Your BMI:That You Are Overweight"}
+              else if(bmi>30)
+                  { document.getElementById("comp").innerHTML="This means: Your BMI:That You Are Obese"}
+             
+         }   
+   
+       </script> 
+      
+    </body>
+
+
+
+
+
+
+
+</html>
